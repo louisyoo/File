@@ -3,5 +3,5 @@
 
 ##函数列表
 
-### Exists(string)
+1. Exists(string)
 确定指定的文件是否存在。
