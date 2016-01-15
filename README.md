@@ -3,5 +3,7 @@
 
 ##函数列表
 
-1. Exists(string)
+1. Exists(filename string)(bool)
 确定指定的文件是否存在。
+2. ReadAllText(filename string)(string)
+打开一个文本文件，读取文件的所有字符串，然后关闭该文件
