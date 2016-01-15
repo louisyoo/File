@@ -5,11 +5,6 @@ import (
 	"os"
 )
 
-func CheckErr(err error) {
-	if err != nil {
-		panic(err)
-	}
-}
 func Exists(filename string) bool {
 	_, err := os.Open(filename)
 	if err != nil && os.IsNotExist(err) {
@@ -21,6 +16,8 @@ func Exists(filename string) bool {
 
 func ReadAllText(filename string) string {
 	buff, err := ioutil.ReadFile(filename)
-	CheckErr(err)
+	if err != nil {
+		panic("文件读取失败")
+	}
 	return string(buff)
 }
