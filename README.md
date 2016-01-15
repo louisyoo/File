@@ -1,2 +1,7 @@
-# file
-file wite(),file read()
+# File
+提供用于创建、复制、删除、移动和打开单一文件的静态方法
+
+##函数列表
+
+1. Exists(string)
+确定指定的文件是否存在。
